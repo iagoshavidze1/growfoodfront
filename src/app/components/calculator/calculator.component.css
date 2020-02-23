@@ -1,0 +1,23 @@
+.calculate-wrapper{
+    height: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+width: 40%;
+/* height: 50%; */
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(255,255,255, 0);
+border: rgba(149,255,176, 0.5) 8px solid ;
+border-radius: 50%;
+}
+
+.form-wrapper::before{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+
+}
