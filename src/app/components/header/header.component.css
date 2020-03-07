@@ -37,3 +37,16 @@
     color: #fff;
     background-color: black;
 }
+
+.nav-container> li a:focus{
+    color: #fff;
+    background-color: black;
+}
+
+li > a{
+  text-decoration: none;
+}
+
+.info{
+    display: inline-block;
+}

@@ -1,3 +1,23 @@
 .main-content{    
     height: 90%;
+    background-image: url(../../../assets/images/vegetables-and-tomatoes-on-cutting-board-255501.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation: main-slide 16s infinite ;
+}
+
+@keyframes main-slide{
+    0%{
+        background-image: url(../../../assets/images/vegetables-and-tomatoes-on-cutting-board-255501.jpg);
+    }
+    25%{
+        background-image: url(../../../assets/images/caroline-attwood-bpPTlXWTOvg-unsplash.jpg);
+    }
+    50%{
+        background-image: url(../../../assets/images/burger-and-vegetables-placed-on-brown-wood-surface-1565982.jpg);
+    }
+    75%{
+        background-image: url(../../../assets/images/women-s-white-top-and-orange-floral-skirt-823694.jpg);
+    }
 }
