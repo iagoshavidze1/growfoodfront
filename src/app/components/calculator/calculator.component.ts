@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  constructor() { }
+  weight: number;
+  age: number;
+  height: number;
+  gender: number;
+  activeType: number;
+
+  constructor() {
+    this.gender = 0;
+    this.activeType = 0;
+  }
 
   ngOnInit() {
   }
 
+  calculate() {
+    debugger;
+    var w = this.weight;
+
+  }
 }
