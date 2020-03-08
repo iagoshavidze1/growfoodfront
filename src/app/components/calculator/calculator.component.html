@@ -1,29 +1,40 @@
 <div class="calculate-wrapper">
 
-    <div class="form-wrapper">
+    <div class="form-wrapper d-flex v-center h-center">
         <!-- <div class="info">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit itaque vero repellat minus assumenda
                 accusamus fugit libero atque, debitis velit?</p>
         </div> -->
-
-        <form class="calculate-form" autocomplete="off">
+        <form class="d-flex d-column v-center h-center" autocomplete="off">
             <h1>კალკულატორი მასის ინდექსის</h1>
 
             <div class="form-item">
-                <input id="weight" type="text" placeholder="წონა">
+                <input id="weight" name="weight" type="number" placeholder="წონა" required min="0" max="300"
+                    [(ngModel)]="weight">
             </div>
             <div class="form-item">
-                <input id="height" type="text" placeholder="სიმაღლე">
+                <input id="height" type="number" min="0" max="250" placeholder="სიმაღლე" required [(ngModel)]="height">
             </div>
             <div class="form-item">
-                <input id="height" type="text" placeholder="ასაკი">
+                <input id="age" type="number" min="0" max="100" placeholder="ასაკი" required [(ngModel)]="age">
             </div>
-            <div class=" radio">
-                <label for="height">სქესი:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <input type="radio" id="female" name="gender" value="female">
-            </div>
+            <select name="gender" id="" required class="gender mb-10 mt-10 p-v p-h br-20 outline-none"
+                [(ngModel)]="gender" value="0">
+                <option value="0" disabled>სქესი</option>
+                <option value="1">მამრობითი</option>
+                <option value="2">მდედრობითი</option>
+            </select>
+            <select name="activate-type" id="" required class="outline-none mb-10 mt-10 p-v p-h br-20"
+                [(ngModel)]="activeType">
+                <option value="0" disabled>აქტივობა</option>
+                <option value="office">საოფისე</option>
+                <option value="active">აქტიური</option>
+                <option value="active-sport">ვარჯიში 3ჯერ კვირაში</option>
+                <option value="active-extremal">ვარჯიში 5ჯერ კვირაში
+                <option>
+            </select>
+            <button type="submit" (click)="calculate()"
+                class="calculate-btn curson-pointer outline-none">დათვლა</button>
         </form>
-
     </div>
 </div>
